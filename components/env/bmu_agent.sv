@@ -25,5 +25,4 @@ function void connect_phase (uvm_phase phase);
   end
 endfunction
 
-
 endclass: bmu_agent
