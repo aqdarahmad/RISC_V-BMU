@@ -39,30 +39,7 @@ This verification environment provides **comprehensive UVM-based testing** for a
 | **Zba**  | SH3ADD | ✅ Verified | Address generation |
 | **Basic** | ADD, SLL, SRA, SLT/SLTU | ✅ Verified | Core arithmetic & logic |
 
-###  Instruction Details
 
-| Instruction | Extension | Control Signals |
-|-------------|-----------|----------------|
-| **ADD**      | Basic | `ap.add` |
-| **CLZ**      | Zbb   | `ap.clz` |
-| **CPOP**     | Zbb   | `ap.cpop` |
-| **MIN**      | Zbb   | `ap.min + ap.sub` |
-| **SEXT.H**   | Zbb   | `ap.siext_h` |
-| **AND**      | Basic | `ap.land` |
-| **ANDN**     | Zbb   | `ap.land + ap.zbb` |
-| **XOR**      | Basic | `ap.lxor` |
-| **XORN**     | Zbb   | `ap.lxor + ap.zbb` |
-| **SLL**      | Basic | `ap.sll` |
-| **SRA**      | Basic | `ap.sra` |
-| **SLT**      | Basic | `ap.slt + ap.sub` |
-| **SLTU**     | Basic | `ap.slt + ap.sub + ap.unsign` |
-| **BEXT**     | Zbs   | `ap.bext` |
-| **ROL**      | Zbp   | `ap.rol` |
-| **PACKU**    | Zbp   | `ap.packu` |
-| **GORC**     | Zbp   | `ap.gorc` |
-| **SH3ADD**   | Zba   | `ap.sh3add + ap.zba` |
-
----
 
 ## BMU Architecture
 
