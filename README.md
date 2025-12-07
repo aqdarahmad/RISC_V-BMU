@@ -8,15 +8,6 @@
 
 ---
 
-##  Table of Contents
-
-
-- [ BMU Architecture]
-- [ Verification Environment]
-- [ Directory Structure]
-- [ Results]
-
----
 
 ## Overview
 
