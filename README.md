@@ -27,7 +27,7 @@ This verification environment provides **comprehensive UVM-based testing** for a
 
 ---
 
-## ✨ Features
+##  Features
 
 ###  Verified RISC-V BitManip Instructions 
 
