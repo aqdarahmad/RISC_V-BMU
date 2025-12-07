@@ -14,7 +14,6 @@
 - [ BMU Architecture]
 - [ Verification Environment]
 - [ Directory Structure]
-- [Verified Instruction Set]
 - [ Results]
 
 ---
@@ -27,17 +26,6 @@ This verification environment provides **comprehensive UVM-based testing** for a
 
 ---
 
-##  Features
-
-###  Verified RISC-V BitManip Instructions 
-
-| Extension | Instructions | Status | Description |
-|-----------|-------------|--------|-------------|
-| **Zbb**  | CLZ, CPOP, MIN, SEXT.H, AND/ANDN, XOR/XORN | ✅ Verified | Basic bit manipulation |
-| **Zbs**  | BEXT | ✅ Verified | Single bit operations |
-| **Zbp**  | ROL, PACKU, GORC | ✅ Verified | Bit permutation |
-| **Zba**  | SH3ADD | ✅ Verified | Address generation |
-| **Basic** | ADD, SLL, SRA, SLT/SLTU | ✅ Verified | Core arithmetic & logic |
 
 
 
