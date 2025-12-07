@@ -1,11 +1,6 @@
-# 🔧 BMU Verification Environment
+# BMU Verification Environment
 
-<div align="center">
 
-![RISC-V](https://img.shields.io/badge/RISC--V-BitManip-blue?style=for-the-badge&logo=riscv)
-![UVM](https://img.shields.io/badge/UVM-Verification-green?style=for-the-badge)
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-RTL-orange?style=for-the-badge)
-![Coverage](https://img.shields.io/badge/Coverage-Functional-red?style=for-the-badge)
 
 **A UVM-based verification environment for the RISC-V Bit Manipulation Unit (BMU)**
 
@@ -13,22 +8,18 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
-- [🎯 Overview](#-overview)
-- [✨ Features](#-features)
-- [🏗️ BMU Architecture](#-bmu-architecture)
-- [🧪 Verification Environment](#-verification-environment)
-- [📁 Directory Structure](#-directory-structure)
-- [🚀 Quick Start](#-quick-start)
-- [🔍 Verified Instruction Set](#-verified-instruction-set)
-- [📊 Coverage Model](#-coverage-model)
-- [🛠️ Usage](#️-usage)
-- [📈 Results](#-results)
+
+- [ BMU Architecture]
+- [ Verification Environment]
+- [ Directory Structure]
+- [Verified Instruction Set]
+- [ Results]
 
 ---
 
-## 🎯 Overview
+## Overview
 
 The **Bit Manipulation Unit (BMU)** is a synthesizable RTL block that implements bit manipulation functionality compliant with the **RISC-V BitManip extension**.  
 
@@ -38,7 +29,7 @@ This verification environment provides **comprehensive UVM-based testing** for a
 
 ## ✨ Features
 
-### 🔢 Verified RISC-V BitManip Instructions (16 Total)
+###  Verified RISC-V BitManip Instructions 
 
 | Extension | Instructions | Status | Description |
 |-----------|-------------|--------|-------------|
@@ -48,7 +39,7 @@ This verification environment provides **comprehensive UVM-based testing** for a
 | **Zba**  | SH3ADD | ✅ Verified | Address generation |
 | **Basic** | ADD, SLL, SRA, SLT/SLTU | ✅ Verified | Core arithmetic & logic |
 
-### 📊 Instruction Details
+###  Instruction Details
 
 | Instruction | Extension | Control Signals |
 |-------------|-----------|----------------|
@@ -73,9 +64,9 @@ This verification environment provides **comprehensive UVM-based testing** for a
 
 ---
 
-## 🏗️ BMU Architecture
+## BMU Architecture
 
-### 📋 Interface Definition
+
 
 | Port Name       | Direction | Width   | Description |
 |-----------------|-----------|--------|-------------|
@@ -90,40 +81,33 @@ This verification environment provides **comprehensive UVM-based testing** for a
 | `result_ff`     | Output    | 32 bit | Final result |
 | `error`         | Output    | 1 bit  | Error flag |
 
-### 🧩 Functional Submodules
+### Functional Submodules
 
-- **➕ Arithmetic Unit**: ADD, SUB, SHxADD
-- **🔄 Shift Logic**: SLL, SRL, SRA, ROL, ROR
-- **🔢 Count Logic**: CLZ, CTZ, CPOP
-- **📏 Extension Logic**: SEXT.B, SEXT.H
-- **⚖️ Compare Logic**: MIN, MAX
-- **🔀 Pack Logic**: PACK, PACKU, PACKH
-- **🎭 Bit Logic**: BSET, BCLR, BINV, BEXT
-
----
-
-## 🧪 Verification Environment
-
-### 🎯 Components
-
-- **🖥️ Environment**: UVM top-level
-- **🤖 Agent**: Modular driver + monitor
-- **🚗 Driver**: Stimulus execution
-- **👀 Monitor**: Signal monitoring
-- **📊 Scoreboard**: Result checking
-- **📝 Sequences**: Directed & random tests
-- **✅ Tests**: Instruction + error + regression tests
-
-### 🎪 Test Categories
-
-- Instruction-specific
-- Random tests
-- Error-condition tests
-- Full regression tests
+- ** Arithmetic Unit**: ADD, SUB, SHxADD
+- ** Shift Logic**: SLL, SRL, SRA, ROL, ROR
+- ** Count Logic**: CLZ, CTZ, CPOP
+- ** Extension Logic**: SEXT.B, SEXT.H
+- ** Compare Logic**: MIN, MAX
+- ** Pack Logic**: PACK, PACKU, PACKH
+- ** Bit Logic**: BSET, BCLR, BINV, BEXT
 
 ---
 
-## 📁 Directory Structure
+##  Verification Environment
+
+###  Components
+
+- ** Environment**: UVM top-level
+- ** Agent**: Modular driver + monitor
+- ** Driver**: Stimulus execution
+- ** Monitor**: Signal monitoring
+- ** Scoreboard**: Result checking
+- ** Sequences**: Directed & random tests
+- ** Tests**: Instruction + error + regression tests
+
+
+
+##  Directory Structure
 
 ```text
 BMU-Verification/
